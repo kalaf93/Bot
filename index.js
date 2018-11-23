@@ -4,8 +4,8 @@ const bot = new Discord.Client()
 bot.on('ready', function () {
   console.log("Je suis connecté !")
 })
-
-bot.login('NDg2OTc0OTIyNjY5ODE3ODYx.DtjzWw.VMETWan3ZU9u5dPzs9cFgiQ92OY')
+const token = process.env.token;
+bot.login('token')
 
 bot.on('message', message => {
     if (message.content === 'ping') {
